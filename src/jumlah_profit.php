@@ -18,7 +18,7 @@ if(mysqli_num_rows($query) > 0) {
     }
 
     // Tampilkan total profit setelah mengakses semua data barang
-    echo '<div style="font-weight: bold;"> ' . number_format($total_profit, 0, ',', '.') . '</div>';
+    echo '<div style="font-weight: bold; color: white; font-size: 30px"> ' . number_format($total_profit, 0, ',', '.') . '</div>';
 } else {
     echo "Tidak ada data barang.";
 }

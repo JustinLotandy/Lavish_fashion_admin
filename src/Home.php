@@ -91,12 +91,27 @@
     margin-top: 30px;
     margin-left: 20px;
   }
+
+  .profiticon{
+    width: 150px;
+    margin-top: 20px;
+  }
+
   .Jbarang{
     font-weight: bold;
     font-size: large;
     color: black;
     text-decoration: none;
     margin-top: -15px;
+  }
+
+  .Pbarang{
+    font-weight: bolder;
+    font-size: 45px;
+    color: black;
+    text-decoration: none;
+    margin-top: -15px;
+    margin: -5px;
   }
   .barangout_icon{
     margin-top: -140px;
@@ -159,6 +174,21 @@
 .profit{
   margin: left 300px; ;
 }
+
+.angka{
+  font-size: 50px;
+  margin-top: -80px;
+  color: white;
+}
+.Quote{
+  margin-left: 300px;
+  margin-top: -90px;
+}
+
+.Quote p{
+  font-size: 50px;
+  color: white;
+}
 </style>
 </head>
 <body class="back">
@@ -218,10 +248,15 @@
        <div class="blue-bg">
         <div class="profit" >
           <div>
-      <img src="./barangjumlah.png" class="jumlahbarangicon" alt="Jumlah Barang Icon">
-      <a class="Jbarang">Profit</a>
+      <img class="profiticon" src="./dolar.png" class="jumlahbarangicon" alt="Jumlah Barang Icon">
+      <a class="Pbarang">Profit</a>
       <div class="Jumlahangka">
-        <p ><?php include 'jumlah_profit.php'?></p>
+        <p class = "angka"><?php include 'jumlah_profit.php'?></p>
+        <div class= "Quote">
+        <p style="margin-left:100px">Hello,</p> <br>
+        <p style="margin-left:200px" ><?php echo isset($_SESSION['nama_karyawan']) ? $_SESSION['nama_karyawan'] : ''; ?></span></p>
+        </div>
+       
       </div>
       
     </div>

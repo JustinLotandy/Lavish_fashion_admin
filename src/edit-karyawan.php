@@ -44,10 +44,10 @@ include 'koneksi.php'?>
                       <label for="exampleInputEmail1">Username karyawan</label>
                       <input type="text" class="form-control" id="exampleInputEmail1" name="username_karyawan" required value="<?php echo $data['username_karyawan']; ?>">
                     </div>
-                    <div class="form-group">
+                   <!-- <div class="form-group">
                       <label for="exampleInputEmail1">Password</label>
-                      <input type="text" class="form-control" id="exampleInputEmail1" name="username_karyawan" required value="<?php echo $data['username_karyawan']; ?>">
-                    </div>
+                      <input type="text" class="form-control" id="exampleInputEmail1" name="password_karyawan" required value="<?php echo $data['password_karyawan']; ?>">
+                    </div>-->
                     <div class="form-group">
                       <label for="exampleInputPassword1">Nama karyawan</label>
                       <input type="text" class="form-control" id="exampleInputPassword1"  name="nama_karyawan" required value="<?php echo $data['nama_karyawan']; ?>">

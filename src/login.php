@@ -22,7 +22,7 @@ if(isset($_POST['login'])) {
         if($data['password_karyawan'] == $password_karyawan) {
             $_SESSION['id_karyawan'] = $data['id_karyawan'];
             $_SESSION['nama_karyawan'] = $data['nama_karyawan'];
-            header("location: lihat-barang.php");
+            header("location: Home.php");
         } else {
             $_SESSION['notification'] = array(
                 'message' => 'Password salah!',
@@ -72,7 +72,7 @@ if(isset($_POST['login'])) {
               <div class="brand-logo">
                 <img src="./f__4_-removebg-preview.png" alt="logo" />
               </div>
-              <h4>Hello! let's Work</h4>
+              <h4>Hello!</h4>
               <h6 class="fw-light">Sign in to continue.</h6>
 
               <!-- Notification Section -->

@@ -13,7 +13,7 @@ if(isset($_POST['login'])) {
         if($data['password_karyawan'] == $password_karyawan) {
             $_SESSION['id_karyawan'] = $data['id_karyawan'];
             $_SESSION['nama_karyawan'] = $data['nama_karyawan'];
-            header("location: lihat-barang.php");
+            header("location: Home.php");
         } else {
             $_SESSION['notification'] = array(
                 'message' => 'Password salah!',
