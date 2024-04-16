@@ -42,16 +42,16 @@ $result = mysqli_query($koneksi, $query);
         }
 
         .modal-content {
-            background-color: #fff; /* Warna latar popup */
-            margin: 5% auto; /* Letakkan di tengah vertikal dan horizontal */
+            background-color: #fff;
+            margin: 5% auto; 
             padding: 20px;
-            border-radius: 10px; /* Sudut border */
-            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Efek bayangan */
+            border-radius: 10px; 
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); 
             width: 80%;
-            max-width: 600px; /* Lebar maksimum */
+            max-width: 600px; 
         }
 
-        /* Tombol untuk menutup popup */
+        
         .close {
             color: #aaa;
             float: right;
